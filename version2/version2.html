@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html lang="de">
+<head>
+  	<meta charset="utf-8">	
+	<title>Flex-Items gestalten - eine einfache Navigation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<style>
+  html { box-sizing: border-box; }
+  *, *::before, *::after { box-sizing: inherit; }
+  body { font: 1rem/1.5 sans-serif; margin: 2rem; }
+  h1 { font-size: 1.5rem; margin-bottom: 1em;}
+
+  ul {
+    list-style-type: none;
+    max-width: 35rem;
+    padding: 0.25rem;
+    border: 1px solid lightgray;
+    margin: 0; 
+  }
+
+  li { 
+    text-align: center; 
+    background: #a8caf3; 
+    padding: 0.5rem; 
+    margin: 0.25rem;
+  }
+
+  /* Ausgangsposition: ul als Flex-Container*/ 
+  ul { display: flex; 
+	   justify-content: } 
+
+/*Erste Übung: List-Elemente benötigen gleich viel Platz*/
+	/*li {flex: 1;} /*1 = jedes Element bekommt gleich viel Platz; Broswer verteilt den Platz automatisch */
+    
+  
+  
+</style>
+
+</head>
+<body>
+<h1>Flex-Items gestalten - eine einfache Navigation</h1>
+
+<ul>
+  <li>Startseite</li> 
+  <li>Über uns</li> 
+  <li>Downloads</li> 
+  <li>Kontakt</li> 
+</ul>
+
+<h2>Flext-Items können unter anderem ...</h2>
+<ul>
+	<li>in verschiedene Richtungen fliessen</li>
+	<li>ihre Ausdehnung dem vorhandenen Platz anpassen (vollautomatisch)</li>
+	<li>Falls Platz übrig ist, auf verschiedene Weisen ausgerichtet werden</li>
+</ul>
+
+<h3>Ausrichtung des Elternelements</h3>
+<ul>
+	<li>justify-content: flex-start = Anfang der Hauptachse</li>
+	<li>justify-content: flex-end = Ende der Hauptachse</li>
+	<li>justify-content: center = Mittig</li>
+	<li>justify-content: space-arount = Leerraum wird gleichmässig verteilt</li>
+	<li>justify-content: space-between = Erstes/letztes Element direkt, andere werden verteilt</li>
+</ul>
+
+<h3>Ausrichtungsmöglichkeit für Kindelemente</h3>
+<li>zum Beispiel letztes Element nach rechts mit Klasse margin-left: auto</li>
+
+</body>
+</html>
