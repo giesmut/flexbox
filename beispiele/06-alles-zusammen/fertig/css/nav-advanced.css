@@ -1,0 +1,46 @@
+/* Styles für Navigation mit Icons */
+
+.advanced-nav li a {
+  display: flex; 
+  width: 100%;   /* Links belegen horizontal die volle Breite */ 
+  justify-content: flex-start; 
+}
+
+.icon {
+  flex: 0 0 1.5em; 
+  font-size: 1.8em; 
+}
+
+.button-text {
+  font-size: 1.8em; 
+}
+
+.button-text span {
+  display: block; 
+  font-size: 40%; 
+  font-weight: lighter; 
+  font-style: italic; 
+}
+
+
+@media screen and (min-width: 30em) { 
+  
+  .advanced-nav ul {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+  
+  .advanced-nav li {
+    flex: 1 0 12em; /* Mindestbreite */ 
+    display: flex;  /* gleiche Höhe für a */ 
+  }
+  
+} 
+
+/** Mehr als 4 Items passen nicht: 4*12=48, Inhalt ist max. 52em
+  * 
+  * Alternative wäre  
+  * ul mit justify-content: space-between 
+  * li dann ohne flex: 1 0 12em 
+  **/ 

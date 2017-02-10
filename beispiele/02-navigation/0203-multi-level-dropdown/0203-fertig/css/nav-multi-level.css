@@ -1,0 +1,89 @@
+/* Styles für Navigation mit mehreren Ebenen (Dropdown) */
+
+
+@media screen and (max-width: 30em){
+	
+    /* Ebene 2, Menüpunkte einrücken */ 
+    .multi-level-nav ul ul li a {
+		padding-left: 2em;
+	}
+
+    /* Button verstecken */ 
+	.dropdown-toggle {
+		display: none;
+	}
+}
+
+
+@media screen and (min-width: 30em){
+	
+    /* Schritt 1: Liste in Ebene 1 als Flex-Container */ 
+    .multi-level-nav ul {
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: space-between; /* flex-start, center, flex-end */ 
+	}	
+    
+	.multi-level-nav li {
+      /* Schritt 2: Listenelemente wachsen gleichmäßig */
+      flex: 1 0 auto; 
+      position: relative;
+	}
+    
+	li.has-children > a {
+		padding-right: 0;
+	}
+    
+    /* Ebene 2 ausblenden */ 
+	.multi-level-nav ul ul {
+		display: none;
+		position: absolute;
+		z-index:100;
+	}
+
+    /* .toggled-on wird per JS hinzugefügt, wenn das Menü geöffnet ist */ 
+	.multi-level-nav ul .toggled-on {
+      display: block; 
+    
+      /* Schritt 3: block => flex, Dropdown so breit wie Menüpunkt Ebene 1 */  
+      display: flex;  
+	}
+
+    /* Listenelemente in Ebene 2 */ 
+    /* Schritt 4: Menüpunkte Ebene 2 flexibilisieren (flex-shrink auf 1) */ 
+	.multi-level-nav ul ul li {
+      flex: 1 1 auto;  
+	}
+    
+    /* Ebene 1, Button mit Untermenü */ 
+	.dropdown-toggle {
+		margin: 0;
+		padding: 0 .5em;
+		border: 0;
+		font-family: 'FontAwesome';
+		content: "";
+		text-transform: lowercase; /* Stop screen readers to read the text as capital letters */
+		background-color: transparent;
+	}
+    
+    /* Button mit Pfeil nach unten */ 
+	.dropdown-toggle:after {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 42px;
+		color: white;
+		content: "\f107";
+		line-height: 1em;	
+	}
+
+	.dropdown-toggle:hover,
+	.dropdown-toggle:focus {
+		background: hsl(0, 0%, 25%);
+	}
+    
+    /* Button mit Pfeil nach oben */ 
+	.dropdown-toggle.toggle-on:after {
+		content: "\f106";
+	}
+}

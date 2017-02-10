@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="de">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <title>Flexbox - All together</title>
+    <meta name="description" content="Übungen - Flexbox-Layouts für Fortgeschrittene">
+                
+    <link rel="stylesheet" href="css/zentrale-all-together.css" type="text/css" media="all">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    
+</head>
+    
+<body>
+    <a class="skip-link screen-reader-text" href="#content">Zum Inhalt springen</a>
+    
+    <div class="outer-wrap">
+
+    <header class="pagehead">
+        
+        <div class="sidebar-switcher">
+          Sidebar: 
+          <button class="sidebar-left-toggle"><i class="fa fa-align-left"></i><span class="screen-reader-text">Sidebar nach links</span></button> 
+          
+          <button href="#" class="sidebar-right-toggle"><i class="fa fa-align-right"></i><span class="screen-reader-text">Sidebar nach rechts</span></button> 
+          
+          <button href="#" class="sidebar-hide-toggle"><i class="fa fa-arrow-circle-right"></i><span class="screen-reader-text">Sidebar aus- und einschalten</span></button>
+        </div><!-- .sidebar-switcher -->
+
+        <div class="centered">
+            <div class="site-branding">
+                <h1 class="site-title">Flexbox - All together now</h1>
+            </div><!-- .site-title -->
+        </div><!-- .centered -->
+
+        <div class="nav-mixed menu">
+
+          <nav id="multi-level-nav" class="multi-level-nav menu" role="navigation">
+            <ul>
+              <li><a href="#">Startseite</a></li>
+              
+              <li class="has-children">
+                <a href="#">Kochen<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Untermenü öffnen</span></button></a>
+                <ul class="sub-menu">
+                    <li><a href="#">Koch mieten</a></li>
+                    <li><a href="#">Catering</a></li>
+                    <li><a href="#">Restaurant</a></li>
+                </ul>
+              </li>
+              
+              <li class="has-children">
+                <a href="#">Kurse<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Untermenü öffnen</span></button></a>
+                <ul class="sub-menu">
+                    <li><a href="#">Kursübersicht</a></li>
+                    <li><a href="#">Registrieren</a></li>
+                    <li><a href="#">Das Frühstück</a></li>
+                    <li><a href="#">Das Mittagessen</a></li>
+                    <li><a href="#">Das Abendessen</a></li>
+                    <li><a href="#">Einkaufen</a></li>
+                </ul>
+              </li>
+              
+              <li><a href="#">Über&nbsp;uns</a></li>
+              
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav><!-- #multi-level-nav .multi-level-nav -->
+        
+          <nav id="social-menu" class="social-menu menu" role="navigation">
+            <ul>
+              <li><a href="http://twitter.com/"><span class="screen-reader-text">Twitter</span></a></li>
+              <li><a href="http://facebook.com"><span class="screen-reader-text">Facebook</span></a></li>
+              <li><a href="http://linkedin.com"><span class="screen-reader-text">LinkedIn</span></a></li>
+              <li><a href="http://youtube.com"><span class="screen-reader-text">YouTube</span></a></li>
+              <li><a href="http://instagram.com"><span class="screen-reader-text">Instagram</span></a></li>
+            </ul>
+          </nav><!-- #social-menu .social-menu -->
+            
+          </div> <!-- .mixed-menu -->
+
+      </header><!-- .pagehead -->
+    
+    <div class="content">
+      <main class="main-area">
+         <section class="cards">
+
+          <article class="card">
+            <a href="#">
+              <figure>
+                <img src="images/banana-wide.jpg" alt="A banana that looks like a bird">
+              </figure>
+              <div class="card-content">
+                <h2>Der Bananenvogel</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer metus mi, porttitor id mollis auctor, commodo ac massa. Nam nec dictum risus. Nam suscipit, metus vitae venenatis vehicula.</p>
+              </div><!-- .card-content -->
+            </a>
+          </article><!-- .card -->
+
+          <article class="card">
+            <a href="#">
+              <figure>
+                <img src="images/boller.jpg" alt="Norwegian boller">
+              </figure>
+              <div class="card-content">
+                <h2>Norwegische Semmel</h2>
+                <p>Diam blandit quam, at feugiat ante ligula a turpis. Quisque urna quam, ornare sit amet nunc at, consectetur tempus magna. Etiam sagittis vulputate ante, sit amet facilisis ligula pellentesque sed.</p> <p>Vivamus sagittis, augue id blandit porttitor, felis turpis congue nulla, eu convallis turpis mauris et lacus. Nam a massa massa. Mauris a dui scelerisque, tincidunt nisl sit amet, lacinia nisi.</p>
+              </div><!-- .card-content -->
+            </a>
+          </article><!-- .card -->
+
+          <article class="card">
+            <a href="#">
+              <figure>
+                <img src="images/dinosaur-jacket.jpg" alt="A dinosaur wearing an aluminium jacket">
+              </figure>
+              <div class="card-content">
+                <h2>Dinosaurier mit Jacke</h2>
+                <p>Integer auctor ipsum vitae ante tempor rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras fringilla molestie ipsum id euismod.</p>
+              </div><!-- .card-content -->
+            </a>
+          </article><!-- .card -->
+
+          <article class="card">
+            <a href="#">
+              <figure>
+                <img src="images/boller-surprise.jpg" alt="Chocolate filled boller">
+              </figure>
+              <div class="card-content">
+                <h2>Süße Überraschung</h2>
+                <p>Fusce pulvinar, arcu id venenatis lacinia, nisi elit posuere nunc, id blandit tellus quam vel augue. Morbi ipsum velit, venenatis ac gravida a, imperdiet vitae quam. Vestibulum varius nibh at consequat scelerisque.  </p>
+              </div><!-- .card-content -->
+            </a>
+          </article><!-- .card -->
+
+          <article class="card">
+            <a href="#">
+              <figure>
+                <img src="images/chocolate-frog.jpg" alt="Chocolate frog on oranges">
+              </figure>
+              <div class="card-content">
+                <h2>Schokofrosch auf Orange</h2>
+                <p>Praesent nulla orci, feugiat in interdum eu, bibendum at erat. Nunc quis fermentum purus, id sagittis leo.</p>
+              </div><!-- .card-content -->
+            </a>
+          </article><!-- .card -->
+
+          <article class="card">
+            <a href="#">
+              <figure>
+                  <img src="images/diving-bird.jpg" alt="A whiskey jack taking a dive">
+              </figure>
+              <div class="card-content">
+                <h2>Und ab dafür</h2>
+                <p>Nullam augue lorem, laoreet mollis dapibus maximus, dapibus vitae diam. Vivamus vitae libero ultricies, ultrices felis ut, ullamcorper dui. </p>
+            </div><!-- .card-content -->
+            </a>
+          </article><!-- .card -->
+
+          <article class="card">
+            <a href="#">
+              <figure>
+                <img src="images/pool-cue-jenga.jpg" alt="Playing Jenga with pool cues">
+              </figure>
+              <div class="card-content">
+                <h2>Jenga um halb zehn</h2>
+                <p>Maecenas congue odio at nisl imperdiet iaculis. Phasellus luctus posuere auctor. Aliquam quis sapien id justo luctus iaculis. Curabitur nisl mauris, ullamcorper eu vestibulum vitae, luctus quis eros.</p> 
+                <p>Nullam finibus, tortor vitae commodo bibendum, quam magna tempor enim, vel tempor velit nunc nec magna.</p>
+              </div><!-- .card-content -->
+              </a>
+          </article><!-- .card -->
+
+        </section><!-- .cards -->
+        </main>
+
+        <aside class="sidebar">
+            <div class="squish-container">
+            <h3>Explore the Demos:</h3>
+            <nav class="example-menu">
+                <ul>
+                    <li><a href="menus.html">Flexbox Menus</a></li>
+                    <li><a href="card-layout.html">Card Layout</a></li>
+                    <li><a href="holy-grail.html">Holy Grail</a></li>
+                    <li><a href="all-together.html">All Together Now</a></li>
+                </ul>
+            </nav><!-- .example-menu -->
+            </div>
+        </aside><!-- .sidebar -->
+    </div><!-- .content -->
+
+    <footer class="footer-area">
+        <p>The footer usually appears on the bottom of the page. That's why it's called the "footer".</p>
+    </footer>
+
+    </div><!-- .outer-wrap -->
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/menu-toggle.js"></script>
+    <script src="js/sidebar-switcher.js"></script>
+
+</body>
+
+</html>

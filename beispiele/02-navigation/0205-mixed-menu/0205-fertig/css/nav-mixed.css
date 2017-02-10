@@ -1,0 +1,15 @@
+/* Styles für Mixed Menu (Dropdown + Social) */
+
+/* Debugging */ 
+/*
+.nav-mixed .multi-level-nav ul { background: darkred; } 
+.nav-mixed .social-menu ul { background: darkorange; } 
+
+*/
+
+.nav-mixed {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  background: hsl(0, 0%, 15%); 
+}

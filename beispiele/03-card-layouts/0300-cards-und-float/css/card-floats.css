@@ -1,0 +1,8 @@
+/* Zur Illustration der Probleme mit Floats */ 
+
+.card {
+  float: left; 
+  width: calc(33% - 1rem);
+  margin-right: 1rem; 
+}
+

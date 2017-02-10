@@ -1,0 +1,44 @@
+/* Styles für Navigation mit Icons */
+
+.advanced-nav li a {
+  display: flex; 
+  justify-content: flex-start; 
+  width: 100%;   /* Links bekommen die volle Breite */
+}
+
+.icon {
+  font-size: 1.8em; 
+  flex: 0 0 1.5em; 
+}
+
+.button-text {
+  font-size: 1.8em; 
+}
+
+.button-text span {
+  display: block; 
+  font-size: 40%; 
+  font-weight: lighter; 
+  font-style: italic; 
+}
+
+@media screen and (min-width: 30em) { 
+  
+  .advanced-nav ul {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+  
+  .advanced-nav li {
+    flex: 1 0 12em; /* Mindestbreite */ 
+
+    display: flex;  /* Links bekommen die gleiche Höhe */ 
+  }
+  
+} 
+
+/** Alternative 
+  * .nav-advanced ul mit justify-content: space-between 
+  * .nav-advanced li dann ohne flex: 1 0 12em 
+  **/ 

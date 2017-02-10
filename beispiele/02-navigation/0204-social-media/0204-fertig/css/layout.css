@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+Layouts
+--------------------------------------------------------------*/
+
+.centered {
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+/* 52*16 = 832px */ 
+@media screen and (min-width: 52em) {
+  .centered {
+      max-width: 52em;
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  display: block;
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
